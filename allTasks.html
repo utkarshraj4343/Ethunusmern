@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .allLinkBtns {
+            margin-top: 3rem;
+            margin: auto 2rem;
+        }
+
+        .allLinkBtns button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Utkarsh Raj</h1>
+        <h1>21BHI10080</h1>
+    </div>
+    <div class="allLinkBtns">
+        <button type="button" class="btn btn-primary"><a target="_blank">HTML Task 1</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">HTML Task 2</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">HTML Task 3</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">HTML Task 4</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">HTML Task 5</a></button>
+        <hr>
+        <button type="button" class="btn btn-primary"><a target="_blank">CSS Task 1</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">CSS Task 2</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">CSS Task 3</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">CSS Task 4</a></button>
+        <button type="button" class="btn btn-primary"><a target="_blank">CSS Task 5</a></button>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+
+    <script>
+        const arr = [
+
+        ]
+
+
+
+        const elements = document.getElementsByClassName('btn-primary');
+
+        let minLen;
+        if (arr.length < elements.length) {
+            minLen = arr.length;
+        } else if (arr.length > elements.length) {
+            minLen = elements.length;
+        } else {
+            minLen = arr.length;
+        }
+
+        for (let i = 0; i < minLen; i++) {
+            elements[i].children[0].setAttribute("href", arr[i]);
+        }
+
+    </script>
+</body>
+
+</html>
